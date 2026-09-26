@@ -34,10 +34,19 @@ class CCercle
 };
 
 int main() {
-    CCercle c1(5, 15 ,20);
+   
+    int rayon;
+    int axe_x;
+    int axe_y;
+
+    cout << "rayon : " << endl;
+    cin >> rayon;
+    cout << "axe y : " << endl;
+    cin >> axe_x;
+    cout << "axe x : " << endl;
+    cin >> axe_y;
+
+    CCercle c1(rayon ,axe_x  ,axe_y);
+
     cout << "surface : " << c1.surface() << ", perimetre : " << c1.perimetre() << ", diametre : " << c1.diametre() <<", axe x : " << c1.abscisse() << ", axe y : " << c1.ordonnee() << endl;
-
-    CCercle c2(10, 30.09 , -45);
-    cout << "surface : " << c2.surface() << ", perimetre : " << c2.perimetre() << ", diametre : " << c2.diametre() <<", axe x : " << c2.abscisse() << ", axe y : " << c2.ordonnee() << endl;
-
 }
